@@ -1,21 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import {
+  Nunito_600SemiBold,
+  Nunito_700Bold,
+  Nunito_800ExtraBold,
+  useFonts,
+} from "@expo-google-fonts/nunito";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Beijar um porco 🐷</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import Routes from "./src/routes";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => {
+  const [fontsLoaded] = useFonts({
+    Nunito_600SemiBold,
+    Nunito_700Bold,
+    Nunito_800ExtraBold,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+ 
+  return <Routes />;
+};
+
+export default App;

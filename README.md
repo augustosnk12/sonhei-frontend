@@ -7,7 +7,9 @@ Frontend of the Sonhei's social media app that will help people make their dream
 First you need to have node or yarn installed on your machine. Then, you can clone this repository and run the following commands inside the project folder. You will also need a smartphone or a virtual machine with Expo installed:
 
 ```
-yarn start
+- *yarn*, and after *yarn start* 
+or 
+- *npm install*, and after *npm start*
 ```
 
 ## Built With

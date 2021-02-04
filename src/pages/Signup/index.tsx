@@ -2,22 +2,20 @@ import React from "react";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useNavigation } from "@react-navigation/native";
 
-import { Text } from "../../components/Text/styles";
-import { Button } from "../../components/Button/styles";
-import Input from "../../components/Input";
-import {
-  FieldLabel,
-  InputWrapper,
-  ForgotPasswordWrapper,
-  SignUpWrapper,
-  FormWrapper,
-  ButtonWrapper,
-} from "./styles";
 import { Container } from "./../Home/styles";
+import { Text } from "../../components/Text/styles";
+import {
+  FormWrapper,
+  InputWrapper,
+  FieldLabel,
+  ButtonWrapper,
+  SignUpWrapper,
+} from "./styles";
+import Input from "../../components/Input";
+import { Button } from "../../components/Button/styles";
 
-const Login: React.FC = () => {
+const Signup: React.FC = () => {
   const navigation = useNavigation();
-
   return (
     <Container>
       <Text size="24" center>
@@ -29,7 +27,12 @@ const Login: React.FC = () => {
       >
         <FormWrapper>
           <InputWrapper>
-            <FieldLabel size="16">Login</FieldLabel>
+            <FieldLabel size="16">Nome</FieldLabel>
+            <Input />
+          </InputWrapper>
+
+          <InputWrapper>
+            <FieldLabel size="16">Email</FieldLabel>
             <Input />
           </InputWrapper>
 
@@ -38,23 +41,19 @@ const Login: React.FC = () => {
             <Input />
           </InputWrapper>
 
-          <ForgotPasswordWrapper>
-            <Text right>Esqueceu sua senha?</Text>
-          </ForgotPasswordWrapper>
-
           <ButtonWrapper>
             <Button onPress={() => {}}>
-              <Text size="18">Entrar</Text>
+              <Text size="18">Cadastrar</Text>
             </Button>
           </ButtonWrapper>
         </FormWrapper>
 
-        <SignUpWrapper onPress={() => navigation.navigate('signup')}>
-          <Text size="14">Ainda não tem uma conta? Cadastre-se aqui</Text>
+        <SignUpWrapper onPress={() => navigation.navigate("login")}>
+          <Text size="14">Já tem uma conta? Faça login</Text>
         </SignUpWrapper>
       </KeyboardAwareScrollView>
     </Container>
   );
 };
 
-export default Login;
+export default Signup;

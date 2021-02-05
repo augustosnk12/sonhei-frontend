@@ -16,7 +16,7 @@ or
 
 * :atom_symbol: React Native — A library to build mobile user interfaces
 * :nail_care: CSS — styled-components
-* :arrow_up_small: Expo - Framework and a platform for universal React applications
+* :arrow_up_small: Expo — Framework and a platform for universal React applications
 
 ## Authors
 

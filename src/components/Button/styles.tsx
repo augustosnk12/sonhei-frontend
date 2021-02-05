@@ -15,3 +15,13 @@ export const Button = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
 `;
+
+export const FloatingButton = styled.TouchableOpacity`
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: ${Colors.redSoft};
+  border-radius: 25px;
+  padding: 5px;
+`

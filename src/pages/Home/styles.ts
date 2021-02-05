@@ -7,6 +7,12 @@ export const Container = styled.View`
   padding: 20px 10px 5px;
 `; 
 
+export const MContainer = styled.View`
+  flex: 1;
+  background-color: ${Colors.purpleSoft};
+  padding: 20px 10px 5px;
+`
+
 export const MiddleContentWrapper = styled.View`
   flex: 1;
   justify-content: center;

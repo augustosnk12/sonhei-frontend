@@ -7,6 +7,7 @@ const { Navigator, Screen } = createStackNavigator();
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import AfterSignup from "./pages/AfterSignup";
 
 export default function Routes() {
   return (
@@ -19,6 +20,7 @@ export default function Routes() {
         <Screen name="home" component={Home} />
         <Screen name="login" component={Login} /> 
         <Screen name="signup" component={Signup} /> 
+        <Screen name="after-signup" component={AfterSignup} />  
       </Navigator>
     </NavigationContainer>
   );

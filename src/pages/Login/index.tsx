@@ -43,13 +43,17 @@ const Login: React.FC = () => {
           </ForgotPasswordWrapper>
 
           <ButtonWrapper>
-            <Button onPress={() => {}}>
+            <Button
+              onPress={() => {
+                navigation.navigate("after-signup"); 
+              }}
+            >
               <Text size="18">Entrar</Text>
             </Button>
           </ButtonWrapper>
         </FormWrapper>
 
-        <SignUpWrapper onPress={() => navigation.navigate('signup')}>
+        <SignUpWrapper onPress={() => navigation.navigate("signup")}>
           <Text size="14">Ainda não tem uma conta? Cadastre-se aqui</Text>
         </SignUpWrapper>
       </KeyboardAwareScrollView>

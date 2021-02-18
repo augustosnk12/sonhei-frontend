@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AfterSignup from "./pages/AfterSignup";
+import FirstDream from "./pages/FirstDream";
 
 export default function Routes() {
   return (
@@ -21,6 +22,7 @@ export default function Routes() {
         <Screen name="login" component={Login} /> 
         <Screen name="signup" component={Signup} /> 
         <Screen name="after-signup" component={AfterSignup} />  
+        <Screen name="first-dream" component={FirstDream} />  
       </Navigator>
     </NavigationContainer>
   );

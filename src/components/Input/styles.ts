@@ -6,7 +6,7 @@ import Colors from '../../utils/Colors';
 export const Container = styled.View``;
 
 export const InputWrapper = styled(TextInput)`
-  height: 50px;
+  min-height: 50px;
   background: ${Colors.white};
   color: ${Colors.darkBlack};
   padding: 0 20px;

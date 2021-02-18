@@ -1,8 +1,8 @@
 import React from "react";
-import { View } from "react-native";
-import { FloatingButton } from "../../components/Button/styles";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
+import { FloatingButton } from "../../components/Button/styles";
 import { Text } from "../../components/Text/styles";
 import Colors from "../../utils/Colors";
 import { MContainer } from "../Home/styles";
@@ -10,6 +10,8 @@ import { MContainer } from "../Home/styles";
 import { WelcomeWrapper, LabelWrapper } from "./styles";
 
 const AfterSignup: React.FC = () => {
+  const navigation = useNavigation();
+
   return (
     <MContainer>
       <Text size="24" center color={Colors.blackSoft}>
@@ -37,7 +39,7 @@ const AfterSignup: React.FC = () => {
         </Text>
       </LabelWrapper>
 
-      <FloatingButton>
+      <FloatingButton onPress={() => navigation.navigate('first-dream')}>
         <MaterialIcons
           name="arrow-forward-ios"
           size={40}

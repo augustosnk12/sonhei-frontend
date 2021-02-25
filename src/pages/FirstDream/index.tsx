@@ -1,9 +1,7 @@
 import React from "react";
-import { MaterialIcons } from "@expo/vector-icons";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useNavigation } from "@react-navigation/native";
 
-import { FloatingButton } from "../../components/Button/styles";
 import { Text } from "../../components/Text/styles";
 import Colors from "../../utils/Colors";
 import { MContainer } from "../Home/styles";
@@ -13,6 +11,8 @@ import { Button } from "../../components/Button/styles";
 import { WelcomeWrapper, LabelWrapper } from "./styles";
 
 const FirstDream: React.FC = () => {
+  const navigation = useNavigation()
+  
   return (
     <MContainer>
       <Text size="24" center color={Colors.blackSoft}>
@@ -36,7 +36,7 @@ const FirstDream: React.FC = () => {
           <Input multiline numberOfLines={5}/>
         </LabelWrapper>
 
-        <Button onPress={() => {}} style={{ marginTop: 15 }}>
+        <Button onPress={() => navigation.navigate('resume-dream')} style={{ marginTop: 15 }}>
           <Text size="18">Próximo</Text>
         </Button>
       </KeyboardAwareScrollView>

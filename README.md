@@ -20,4 +20,4 @@ or
 
 ## Authors
 
-* **Augusto Francisco** - *Initial work* - [augustosnk12](https://github.com/augustosnk12)
+* **Augusto Francisco** - *Initial solo work* - [augustosnk12](https://github.com/augustosnk12)

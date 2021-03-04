@@ -10,6 +10,7 @@ interface TextProps extends NativeTextProps {
   right?: boolean;
   bold?: boolean;
   size?: number | string;
+  
 }
 
 export const Text = styled.Text<TextProps>`
@@ -23,8 +24,8 @@ export const Text = styled.Text<TextProps>`
         : weight
     }`}
   color: ${({ color = Colors.white }) => color};
-  ${({ center }) => (center ? "text-align: center;" : "")}
-  ${({ right }) => (right ? "text-align: right;" : "")}
-  ${({ size }) => (size ? `font-size: ${size}px;` : "")}
+  ${({ center }) => (center ? "text-align: center;" : "")};
+  ${({ right }) => (right ? "text-align: right;" : "")};
+  ${({ size }) => (size ? `font-size: ${size}px;` : "")};
 `;
 

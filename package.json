@@ -10,6 +10,7 @@
   "dependencies": {
     "@expo-google-fonts/nunito": "^0.1.0",
     "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/material-bottom-tabs": "^5.3.14",
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
     "axios": "^0.21.1",
@@ -23,6 +24,7 @@
     "react-native-gesture-handler": "1.8.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.3",
     "react-native-modal": "^11.7.0",
+    "react-native-paper": "^4.7.2",
     "react-native-screens": "2.15.0",
     "react-native-web": "~0.13.12",
     "react-navigation": "^4.4.3",

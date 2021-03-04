@@ -6,7 +6,8 @@ enum Colors {
     darkBlack = '#211916',
     white = '#FFFFFF',
     gray = '#555555',
-    redSoft = '#FF296D' 
+    redSoft = '#FF296D',
+    softGray = '#c3c5c7'
 }
 
 export default Colors;

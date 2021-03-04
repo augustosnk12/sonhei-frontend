@@ -54,9 +54,7 @@ const ResumeDream: React.FC = () => {
         setOpen={setOpenModal}
         message="Tudo Pronto! Agora você é livre para fazer o que quiser!!! 😎"
         confirmButtonText="Massa!"
-        confirmButtonClick={() => {
-          Alert.alert('meu ovos')
-        }}
+        confirmButtonClick={() => navigation.navigate('main')}
       />
     </MContainer>
   );

@@ -17,3 +17,8 @@ export const MiddleContentWrapper = styled.View`
   flex: 1;
   justify-content: center;
 `
+export const HorizontalLine = styled.View`
+  height: 1px;
+  background-color: ${Colors.softGray};
+  width: 100%;
+`

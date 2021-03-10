@@ -17,9 +17,11 @@ import ResumeDream from "./pages/FirstDream/ResumeDream";
 import Feed from "./pages/Feed";
 import Colors from "./utils/Colors";
 import DreamScreen from "./pages/DreamScreen";
+import NewDream from "./pages/DreamScreen/NewDream";
 import Friends from "./pages/Friends";
 import Notifications from "./pages/Notifications";
 import UserPage from "./pages/UserPage";
+import CustomHeader from "./components/Header/CustomHeader";
 
 function myTabs() {
   return (
@@ -88,7 +90,7 @@ export default function Routes() {
           screenOptions={{
             headerShown: false,
           }}
-          // initialRouteName="resume-dream"
+          initialRouteName="main" 
         >
           <Screen name="home" component={Home} />
           <Screen name="login" component={Login} />
@@ -97,6 +99,10 @@ export default function Routes() {
           <Screen name="first-dream" component={FirstDream} />
           <Screen name="resume-dream" component={ResumeDream} />
           <Screen name="main" component={myTabs} />
+          <Screen name="new-dream" component={NewDream}/*  options={{
+            headerShown: true,
+            header: () => <CustomHeader title='Um novo sonho...' />
+          }} *//>
         </Navigator>
       </NavigationContainer>
     </>

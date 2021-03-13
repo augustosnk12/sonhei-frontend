@@ -3,7 +3,6 @@ import styled from 'styled-components/native';
 export const DreamCardWrapper = styled.View`
     flex-direction: row;
     margin-top: 15px;
-
 `
 
 export const PictureWrapper = styled.View`

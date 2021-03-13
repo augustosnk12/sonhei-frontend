@@ -8,13 +8,17 @@ import { HeaderWrapper } from "./styles";
 import { HorizontalLine } from "../../pages/Home/styles";
 
 // import { Container } from './styles';
+interface HeaderProps {
+  headerTitle?: any;
+  headerSize?: string | number;
+}
 
-const Header: React.FC = () => {
+const Header: React.FC<HeaderProps> = ({headerTitle = 'Meus sonhos', headerSize = 28}) => {
   return (
     <View>
       <HeaderWrapper>
-        <Text color={Colors.blackSoft} size={30}>
-          Meus sonhos
+        <Text color={Colors.blackSoft} size={headerSize}>
+          {headerTitle}
         </Text>
         <View style={{ display: "flex", flexDirection: "row" }}>
           <Ionicons

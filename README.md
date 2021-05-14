@@ -1,3 +1,5 @@
+# *Project is stopped for a while because I don't have a equipment good enough to keep coding :cry:*
+
 # Sonhei app
 
 Frontend of the Sonhei's social media app that will help people make their dream come true.
